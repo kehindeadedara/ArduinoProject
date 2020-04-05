@@ -23,12 +23,12 @@ def windows(array):
     n = len(array)
     max_seen, min_seen = -float('inf'), float('inf')
 
-    for i in range(n):
-        max_seen = max(max_seen, array[i])
-        print(max_seen)
+    for i in range(n): #iterates
+        max_seen = max(max_seen, array[i])# find the max
+        print(max_seen)              #
         if array[i] < max_seen:
-            print(array[i])
             right = i
+    print(right)
     #
     # for i in range(n-1,-1,-1):
     #     min_seen = min(min_seen,array[i])
